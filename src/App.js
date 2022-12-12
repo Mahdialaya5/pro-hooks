@@ -24,14 +24,12 @@ function Add(title,desc,url,rating){
       const handleRating = (rate) => {
         setRating(rate)
       } 
-      function Clear(title){
-      setClear("")
-      }
+      
     
     
       
  return (<> 
-  <Nav add={Add} Clear={Clear} />
+  <Nav add={Add}  />
   <input className="form-control me-2"  placeholder="search"  onChange={(e)=>setSearch(e.target.value)} />
     <Rating  onClick={handleRating} />
     <div >
